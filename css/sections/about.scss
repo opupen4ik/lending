@@ -1,0 +1,59 @@
+.about__img {
+	width: 220px;
+	height: 220px;
+	overflow: hidden;
+	border: 5px solid #fff;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.about__img-item {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	/* Чтобы картинка не деформировалась,
+	если станет не квадратной */
+}
+
+.about__left {
+	float: left;
+	width: 320px;
+	text-align: center;
+}
+
+.about__right {
+	float: right;
+	width: 380px;
+}
+
+.about__text {
+	height: 300px;
+	overflow: auto;
+	margin-bottom: 86px;
+	color: #646464;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.text-block {
+	font-weight: 300;
+}
+
+.text-block p {
+	margin: 0 0 15px 0;
+}
+
+.about__download {
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+

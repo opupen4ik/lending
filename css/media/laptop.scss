@@ -1,0 +1,40 @@
+@media screen and (max-width: 992px) {
+  .container {
+    width: 730px;
+  }
+  .sidebar, .page-content {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .sidebar {
+    margin-bottom: 35px;
+  }
+  .menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+  }
+  .menu__link {
+    text-align: left;
+    border: none;
+    padding-right: 0;
+  }
+  .menu__link {
+    &:hover {
+      &::after {
+  			width: 0px;
+  		}
+  	}
+  }
+  .about__left {
+    width: 30%;
+  }
+  .about__right {
+    width: 70%;
+  }
+  .about__img {
+    width: 165px;
+    height: 165px;
+  }
+}

@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+  .header__left {
+    width: 70%;
+  }
+  .header__right {
+    width: 30%;
+    padding-top: 20px;
+  }
+  .contacts {
+    background: url(/img/icons/phone.png) center center no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+  }
+  .contacts__link {
+    font-size: 0;
+  }
+  .contacts__dropdown {
+    // transform: translateX(0);
+    // right: 0;
+    // left: auto;
+    left: -9999px;
+  }
+  .contacts:hover .contacts__dropdown {
+    right: 0;
+    transform: translateX(0);
+    left: auto;
+  }
+  .contacts__triangle {
+    right: 0;
+    transform: translateX(0);
+    left: auto;
+  }
+  .menu__link-title {
+    margin-left: 5px;
+  }
+  .menu__item {
+    margin-right: 20px;
+  }
+  .content-title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about__left,
+  .about__right {
+    float: none;
+    width: 100%;
+  }
+  .about__download {
+    text-align: center;
+  }
+  .carier-info__left,
+  .carier-info__right {
+    width: 100%;
+    float: none;
+  }
+  .carier-info__left {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .carier-info__img {
+    display: inline-block;
+    height: 220px;
+    width: 220px;
+  }
+  .carier-info__item {
+    padding: 0;
+  }
+  .carier-info__block {
+    display: block;
+    width: 100%;
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+  .carier-info__year {
+    display: none;
+  }
+  .works__item {
+    width: calc(100% / 2 - 20px);
+  }
+  .footer {
+    height: 95px;
+    margin-top: -95px;
+  }
+  .wrapper::after {
+    height: 95px;
+  }
+  .footer__left, .footer__right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}

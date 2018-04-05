@@ -1,0 +1,103 @@
+.hallo-wrapper {
+	background: url('/img/bg/geometry2.png');
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.hallo-wrapper::before {
+	content: "";
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	vertical-align: middle;
+	}
+
+.hallo {
+	width: 300px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 70px;
+	opacity: 0;
+}
+
+.hallo.bounceIn {
+	animation: bounce 1s cubic-bezier(.07,.074,.25,.97);
+	opacity: 1;
+}
+
+/* keyframes */
+
+@keyframes bounce {
+
+	0% {
+		transform: scale(.3, .3);
+		opacity: 0;
+	}
+
+	20% {
+		transform: scale(1.1, 1.1);
+	}
+
+	40% {
+		transform: scale(.9, .9);
+	}
+
+	60% {
+		transform: scale(1.03, 1.03);
+	}
+
+	80% {
+		transform: scale(.97, .97);
+	}
+
+	100% {
+		transform: scale(1, 1);
+		opacity: 1;
+	}
+}
+
+.hallo__top {
+	border-radius: 7px 7px 0 0;
+	background: #fff;
+	padding: 80px 60px 20px 60px;
+	font-size: 21px;
+	position: relative;
+	margin-top: 70px;
+}
+
+.hallo__avatar {
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .5);
+	background: url('../img/content/ava_max.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -70px;
+	left: 50%;
+	margin-left: -70px;
+}
+
+.hallo__bottom {
+	text-align: center;
+	background: #33c1e3;
+	padding: 20px 0;
+	border-radius: 0 0 7px 7px;
+}
+
+.white-link {
+	border-color: #f6f6f6;
+	color: #f6f6f6;
+}
+
+.white-link:hover {
+	background: #f6f6f6;
+	color: #33c1e3;
+}

@@ -1,0 +1,132 @@
+.carier-info__right {
+	float: right;
+	width: 455px;
+}
+
+.carier-info__left {
+	float: left;
+	width: 220px;
+}
+
+.carier-info__img {
+	overflow: hidden;
+	border-radius: 9px;
+}
+
+.carier-info__pic {
+	display: block;
+	max-width: 100%;
+}
+
+.carier-info__list {
+	text-align: right;
+}
+
+.carier-info__block {
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+	width: 380px;
+	box-sizing: border-box;
+	padding: 20px;
+	display: inline-block;
+	text-align: left;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.carier-info__item{
+	padding-left: 70px;
+}
+
+.carier-info__block::after,
+.carier-info__block::before {
+	content: "";
+	display: block;
+	width: 1px;
+	background: #ddd;
+	position: absolute;
+	right: 100%;
+	margin-right: 20px;
+}
+
+.carier-info__item:first-child .carier-info__block::before,
+.carier-info__item:last-child .carier-info__block::after {
+	display: none;
+}
+
+.carier-info__block::before {
+	top: 0;
+	bottom: 50%;
+}
+
+.carier-info__block::after {
+	top: 50%;
+	bottom: -25px;
+}
+
+.carier-info__item:hover .carier-info__block {
+	background: #33c1e3;
+	transition: 300ms;
+}
+
+.carier-info__item:hover .carier-info__title,
+.carier-info__item:hover .carier-info__occ,
+.carier-info__item:hover .carier-info__time {
+	color: #fff;
+	transition: 300ms;
+}
+
+.carier-info__item:hover .carier-info__year {
+	font-weight: 600;
+	color: #33c1e3;
+	transition: 300ms;
+}
+
+.carier-info__item:hover .carier-info__year::after {
+	border-color: #94e0f2;
+	transition: 300ms;
+}
+
+.carier-info__title {
+	font-size: 21px;
+	color: #5a5a5a;
+	margin-bottom: 10px;
+}
+
+.carier-info__occ,
+.carier-info__time {
+	font-weight: 300;
+	color: #727272;
+	margin-bottom: 10px;
+}
+
+.carier-info__time {
+	margin-bottom: 0;
+}
+
+.carier-info__year {
+	position: absolute;
+	top: 50%;
+	margin-top: -14px;
+	right: 100%;
+	margin-right: 35px;
+	font-size: 14px;
+	color: #727272;
+	line-height: 28px;
+	z-index: 10;
+}
+
+.carier-info__year::after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #33c1e3;
+	position: absolute;
+	right: -25px;
+	top: 50%;
+	margin-top: -10px;
+	border: 5px solid #f6f6f6;
+}

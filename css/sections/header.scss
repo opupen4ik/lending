@@ -1,0 +1,148 @@
+.header{
+	background: #fff;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	padding-bottom: 9px;
+	margin-bottom: 25px;
+}
+
+.header__left,
+.header__right {
+	float: left;
+	width: 50%;
+}
+
+
+
+.user__foto {
+	/* здесь инлайн-блок т.к. юзер - элемент
+	(внутри самих эл-ов д маленьких блоков
+	инлайн используем) и т.к. части выравниваются
+	по вертикали (выровнять по вертикали других
+	способов нет) */
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 2px solid #bebebe;
+}
+
+.user__foto-img {
+	display: block;
+	/* убрать отступ внизу картинки по
+	умолчанию, чтобы круг сделать */
+}
+
+.user__name {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 250px;
+	/* если имя будет длинным, чтобы оно не
+	съезжало надругую строчку (под картинку) */
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+.header__right {
+	text-align: right;
+	padding-top: 30px;
+}
+
+.header__left {
+	padding-top: 9px;
+}
+
+.contacts {
+	position: relative;
+	display: inline-block;
+	margin-top: 3px;
+}
+
+.contacts:hover .contacts__link {
+	color: #e85f61;
+}
+
+.contacts:hover .contacts__dropdown {
+	left: 50%;
+	opacity: 1;
+}
+
+.contacts__link {
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #32c3e5;
+	padding-bottom: 5px;
+	background: url('/img/decor/dotted-border.png') 0 bottom repeat-x;
+}
+
+.contacts:hover .contacts__link {
+	background: url('/img/decor/dotted-border-hover.png') 0 bottom repeat-x;
+}
+
+.contacts__dropdown {
+	padding: 15px 20px;
+	background: #fff;
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	position: absolute;
+	top: 100%;
+	transform: translateX(-50%);
+	z-index: 5;
+	margin-top: 15px;
+	left: -9999px;
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.contacts__dropdown::before {
+	content: "";
+	display: block;
+	left: 0;
+	right: 0;
+	height: 30px;
+	top: -30px;
+	position: absolute;
+}
+
+.contacts__triangle {
+	height: 0;
+	width: 0;
+	border: 6px solid transparent;
+	border-top-width: 0px;
+	border-bottom: 10px solid #dedede;
+	position: absolute;
+	top: -11px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-right: 10px;
+}
+
+.contacts__triangle::before {
+	content: "";
+	height: 0;
+	width: 0;
+	border: 6px solid transparent;
+	border-top-width: 0px;
+	border-bottom: 10px solid #fff;
+	position: absolute;
+	top: 2px;
+	left: -6px;
+	margin-right: 10px;
+}
+
+.contacts__item-link {
+	white-space: nowrap;
+	font-size: 18px;
+	font-family: "fira sans";
+	font-weight: light;
+	color: #414141;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+	margin: 15px 0;
+}
+
+.contacts__icon {
+	color: #33bfe2;
+	margin-right: 11px;
+}

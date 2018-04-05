@@ -1,0 +1,57 @@
+.sidebar {
+	/* В больших частях, и если они не выравниваются
+	по вертикали блоках используем флоты.
+	С инлайновым пробелом бороться font-size: 0;
+	или остальные 4 способа - все плохо. Если заказчик
+	скажет убрать отстуты (а font-size родителя
+	наследуется на все элементы), то нам придется обратно
+	проставлять их для каждого элемента. А если после
+	этого понадобится что-то дописать в один из этих
+	блоков - текст не появится.
+	Можно поставить font-size: 0 родителю, а потом
+	родитель>* font-size: 16px. Но если тут появится еще
+	одна колонка, придется все равно править. */
+	float: left;
+	width: 220px;
+}
+
+.page-content {
+	float: right;
+	width: 700px;
+	margin-left: 20px;
+}
+
+.content-title {
+	font-size: 35px;
+	color: #414141;
+	line-height: 38px;
+	margin-bottom: 17px;
+	font-weight: medium;
+}
+
+.download-link {
+	padding: 7px 20px;
+	border: 2px solid #e85f61;
+	color: #e85f61;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 40px;
+	display: inline-block;
+	transition: color .3s, background .3s;
+}
+
+.download-link:hover {
+	background: #e85f61;
+	color: #fff;
+}
+
+.download-link__icon,
+.download-link__title {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.download-link__icon {
+	margin-right: 5px;
+}
